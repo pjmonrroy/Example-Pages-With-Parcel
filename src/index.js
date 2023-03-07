@@ -7,13 +7,13 @@ const main = async () => {
 
     const output = products?.map((product) => {
         return `
-         <article class="Card">
-            <img src="${product.images[0]}">
-            <h2>
-             ${product.title} <small>Price $ ${product.price}</small>
-            </h2>
-         </article>
-        `;
+                <article class="Card">
+                    <img src="${product.images[0]}">
+                    <h2>
+                    ${product.title} <small>Price $ ${product.price}</small>
+                    </h2>
+                </article>
+                `;
     }).join('');
     let newItem = document.createElement("section")
     newItem.classList.add("Items");
